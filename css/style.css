@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  font-size: 14px;
+  overflow: hidden;
+  font-family: 'Montserrat' , sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .svg-parallax {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.wrapper .section-btn {
+  position: fixed;
+  width: 100%;
+  background: #f2f3f7;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .section-btn a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #5a84a2;
+  font-size: 18px;
+  border-radius: 40px;
+  -webkit-box-shadow: -2px -2px 8px white, -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: -2px -2px 8px white, -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .section-btn a:hover {
+  -webkit-box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .section-btn a:hover span {
+  display: inline-block;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.wrapper .section-wavy {
+  top: 100%;
+  z-index: 3;
+  background: #111;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.wrapper .section-wavy h2 {
+  position: relative;
+  font-size: 6em;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .wrapper .section-wavy h2 {
+    font-size: 2em;
+  }
+}
+
+.wrapper .section-wavy svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */
